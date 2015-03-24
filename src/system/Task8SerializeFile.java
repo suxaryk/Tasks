@@ -15,12 +15,8 @@ public class Task8SerializeFile {
         try {
             objectInputStream = new ObjectInputStream(new FileInputStream(path.toFile()));
 
-
-
             while ((j = (Junior) objectInputStream.readObject()) != null ){
-               // list.add(j instanceof  Junior?(Junior) j:null);
                 list.add(j);
-
             }
 
         } catch (FileNotFoundException e) {
@@ -43,8 +39,10 @@ public class Task8SerializeFile {
             objectOutputStream.writeObject(new Junior("Jon","Bond2", new Integer[]{10,10,0,0,30}));
             objectOutputStream.writeObject(new Junior("Jon","Bond3", new Integer[]{10,10,20,30,30}));
             objectOutputStream.writeObject(new Junior("Jon","Bond4", new Integer[]{10,10,0,0,0}));
-            objectOutputStream.writeObject(new Junior("Jon", "Bond5", new Integer[]{10, 10, 10, 10, 10}));
+            objectOutputStream.writeObject(new Junior("Jon", "Bond5", new Integer[]{10,10,10,10,10}));
             objectOutputStream.writeObject(null);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -79,7 +77,6 @@ public class Task8SerializeFile {
         read(Paths.get("file.dat"));
         sortListDesc();
 
-
         show();
 
 
@@ -100,9 +97,6 @@ class Junior implements Serializable{
             sum += this.marks[i];
         }
     }
-
-
-
 
     @Override
     public String toString() {
