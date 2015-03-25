@@ -71,7 +71,6 @@ public class Task8SerializeFile {
 
     }
 
-
     public static void main(String[] args) throws IOException{
         write(Paths.get("file.dat"));
         read(Paths.get("file.dat"));
