@@ -1,8 +1,6 @@
 package system;
 
 
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,12 +12,6 @@ public class Task9ConvertNumToText {
     private static Map<Integer, String> map = new TreeMap<Integer, String>();
 
     public static void main(String[] args)  throws IOException {
-        ConvertNumToText();
-        //showMap();
-
-    }
-    public static void ConvertNumToText() {
-        createTable();
         Integer num = null;
         try {
             BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
@@ -27,42 +19,42 @@ public class Task9ConvertNumToText {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        if (num instanceof Integer){
-            if (num >= 0 && num <= 1000){
-                int d0 = (num % 1000) /100 * 100;
-                int d1 = (num % 100) / 10 * 10;
-                int d2 = (num % 10);
-
-
-
-                if (num == 1000) System.out.print(map.get(1000));
-                if (num == 0) System.out.print(map.get(0));
-                if (d0 >= 100) System.out.print(map.get(d0) );
-
-                if (d1 >= 20) {
-                    if (d0 >= 100) System.out.print(" and ");
-                    System.out.print(map.get(d1));
-                }
-                if (d2 >= 0){
-                    if (d1 >= 20) System.out.print("-");
-                    //if (d0 >= 100) System.out.print(" ");
-                    System.out.print(map.get(num % 100));
-                }
-
-            }else {
-                throw new Error("Out of range 0..1000");
-            }
-
+        for (int i = 0; i < 1000; i++) {
+            System.out.println(i + " = " + ConvertNumToText(i));
         }
-
-        // num 0..999,1000
-
-        //logic
+        // System.out.println(ConvertNumToText(num));
+        //showMap();
 
     }
+    public static String ConvertNumToText(Integer num) {
+        createTable();
+        String s = "";
+
+        if (num >= 0 && num <= 1000){
+            int d0 = (num % 1000) /100 * 100;
+            int d1 = (num % 100) / 10 * 10;
+            int d2 = (num % 10);
+
+            if (num == 1000) s += map.get(1000);
+            if (num == 0) s += map.get(0);
+            if (d0 != 0) s += map.get(d0);
+            if (d1 != 0 || d2 != 0){
+                if (num % 1000 > 100) s += " and ";
+                if (num % 100 > 20){
+                    s +=map.get(d1) ;
+                   if (d2 != 0) s += "-" +map.get(d2);
+                } else s +=map.get(num % 100);
+            }
+
+            return s;
+
+        }else {
+            throw new Error("Out of range 0..1000");
+        }
+    }
+
+
     public static void createTable(){
-        //twenty seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred
         String teen = "teen";
         String ty = "ty";
         String thir = "thir";
