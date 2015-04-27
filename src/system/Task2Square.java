@@ -36,7 +36,7 @@ public class Task2Square {
         }
         return sum;
     }
-    public static Point getMaxValuebyKey(Map<Integer, Point> treeMap){
+    public static Point getMaxValueByKey(Map<Integer, Point> treeMap){
         int i = 0;
         Point p = new Point();
         for (Map.Entry entry : treeMap.entrySet()) {
@@ -115,7 +115,7 @@ public class Task2Square {
 
         System.out.println(k + " k");
 
-        return  getMaxValuebyKey(treeMap);
+        return  getMaxValueByKey(treeMap);
     }
 
 

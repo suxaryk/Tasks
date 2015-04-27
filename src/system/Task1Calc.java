@@ -30,7 +30,7 @@ public class Task1Calc {
 //
 //            return new Integer(0);
 //        }
-
+//
 //    public static int calc1(String line){
 //        char[] arr= line.toCharArray();
 //        for (int i = 0; i < arr.length; i++) {

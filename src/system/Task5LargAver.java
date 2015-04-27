@@ -18,7 +18,7 @@ public class Task5LargAver {
     public static void task5(){
         BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
         List<Integer> list = new ArrayList<Integer>();
-        int num = 0;
+        int num;
         int k = 0;
         int sum = 0;
         try {
