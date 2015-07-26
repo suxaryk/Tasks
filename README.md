@@ -19,12 +19,11 @@ the sum of the digits, includes in the square, is the greatest.
 For example: Program should return the coordinates of the top left vertex of the square [1,1]
 for the folowing matrix:
 
-        N=4
+       N=4
      _ _ _ _
     |2 2_2 2|
 M=3 |2|7 5|2|
-    |1|7_7|1|       
-    
+    |1|7_7|1|     
        D=2
        
        
