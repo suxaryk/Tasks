@@ -103,27 +103,3 @@ and their length.
 Sort results in alphabetical order by name of artists, title of album and title of song.
 7) List of songs from the albums created after 1976 and before 1986. As a result show names
 of artists, titles of albums and titles of songs.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
