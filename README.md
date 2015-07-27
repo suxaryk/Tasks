@@ -7,11 +7,11 @@ of characters taken from calculator keyboard and returns the calculated number/
 The calculator should calculate the value meeting the standart sequence of mathematical operators.
 
 Parametr should consist only of natural numbers and mathematical base operator '+', '-', '*', '/'.
-Example:  
-"122-3/6+4"  
-output: 125,5  
+Example:    
+"122-3/6+4"    
+output: 125,5    
 
-Tasks 2    
+Tasks 2      
 There is [N][M] matrix and a square with the side D, where N and M are bigger than D.  
 Write a program which displays the coordinates of the top left vertex of the square for which  
 the sum of the digits, includes in the square, is the greatest.    
