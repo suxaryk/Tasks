@@ -11,18 +11,18 @@ Example:
 "122-3/6+4"
 output: 125,5
 
-Tasks 2
-There is [N][M] matrix and a square with the side D, where N and M are bigger than D.
-Write a program which displays the coordinates of the top left vertex of the square for which
-the sum of the digits, includes in the square, is the greatest.
+Tasks 2  
+There is [N][M] matrix and a square with the side D, where N and M are bigger than D.  
+Write a program which displays the coordinates of the top left vertex of the square for which  
+the sum of the digits, includes in the square, is the greatest.  
 
-For example: Program should return the coordinates of the top left vertex of the square [1,1]
-for the folowing matrix:
+For example: Program should return the coordinates of the top left vertex of the square [1,1]  
+for the folowing matrix:  
 
        N=4
      _ _ _ _
     |2 2_2 2|
-    |2 7_5 2|  M = 3
+    |2|7_5|2|  M = 3
     |1|7_7|1|     
        D=2
        
@@ -88,17 +88,17 @@ were added to the queue.
 Task 7
 You have a database with tables: artists , songs and albums. Please prepare proper queries to get:
 
-1) List of artists from USA.
-2) List of artists who are still performing (did not break up yet). As a result show names 
-of artists (in alphabetical order) and country of origin.
-3) List of songs from album "Legend". As a result show titles of songs (in alphabetical order)
-and their length.
-4) List of songs from the albums with the highhest rating/ As a result show names of songs,
-titles of albums and their rating.
-5) Number of songs performed by each artist. As a result show names of artists and number 
-of their songs in the database. Sort results by number of songs(from highest to lowest)
-6)List of songs. As a result, show names of artists, titles of albums, titles of songs 
-and their length.
-Sort results in alphabetical order by name of artists, title of album and title of song.
-7) List of songs from the albums created after 1976 and before 1986. As a result show names
-of artists, titles of albums and titles of songs.
+1) List of artists from USA.  
+2) List of artists who are still performing (did not break up yet). As a result show names   
+of artists (in alphabetical order) and country of origin.  
+3) List of songs from album "Legend". As a result show titles of songs (in alphabetical order)  
+and their length.  
+4) List of songs from the albums with the highhest rating/ As a result show names of songs,  
+titles of albums and their rating.  
+5) Number of songs performed by each artist. As a result show names of artists and number   
+of their songs in the database. Sort results by number of songs(from highest to lowest)  
+6)List of songs. As a result, show names of artists, titles of albums, titles of songs   
+and their length.  
+Sort results in alphabetical order by name of artists, title of album and title of song.  
+7) List of songs from the albums created after 1976 and before 1986. As a result show names  
+of artists, titles of albums and titles of songs.  
