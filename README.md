@@ -18,13 +18,14 @@ the sum of the digits, includes in the square, is the greatest.
 
 For example: Program should return the coordinates of the top left vertex of the square [1,1]
 for the folowing matrix:
-
        N=4
      _ _ _ _
     |2 2_2 2|
 M=3 |2|7 5|2|
     |1|7_7|1|     
        D=2
+
+
        
        
 Task 3 
@@ -88,7 +89,7 @@ were added to the queue.
 Task 7
 You have a database with tables: artists , songs and albums. Please prepare proper queries to get:
 
-1) List of artists from USA/
+1) List of artists from USA.
 2) List of artists who are still performing (did not break up yet). As a result show names 
 of artists (in alphabetical order) and country of origin.
 3) List of songs from album "Legend". As a result show titles of songs (in alphabetical order)
